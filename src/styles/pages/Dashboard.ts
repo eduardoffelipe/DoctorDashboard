@@ -44,6 +44,42 @@ export const ContainerPrincipal = styled.div`
   grid-area: principal;
   background: ${props => props.theme.colors.backgroundCard};
   border-radius: 20px;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`
+export const ContainerPrincipalFlex = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+`
+export const ContainerPrincipalLeft = styled.div``
+export const ContainerPrincipalRight = styled.div`
+  margin: -120px 120px;
+`
+export const Title = styled.h1`
+  font-size: 3.5rem;
+  color: ${props => props.theme.colors.textLight};
+  font-weight: 400;
+  margin: 30px 0px;
+`
+export const Subtitle = styled.h2`
+  font-size: 1.8rem;
+  color: ${props => props.theme.colors.text};
+  font-weight: 400;
+`
+export const TextDate = styled.p`
+  font-size: 1.5rem;
+  color: ${props => props.theme.colors.text};
+`
+
+export const SpanBold = styled.span`
+  font-weight: 700;
+  color: ${props => props.theme.colors.text};
+`
+export const SpanOrange = styled.span`
+  color: #ff8c00;
 `
 
 export const ContainerEarning = styled.div`

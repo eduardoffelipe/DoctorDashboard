@@ -11,8 +11,17 @@ import {
   ContainerClients,
   ContainerGender,
   ContainerAppoitments,
-  ContainerAnalytics
+  ContainerAnalytics,
+  SpanBold,
+  Title,
+  SpanOrange,
+  TextDate,
+  Subtitle,
+  ContainerPrincipalFlex,
+  ContainerPrincipalLeft,
+  ContainerPrincipalRight
 } from '../styles/pages/Dashboard'
+import DoctorSVG from '../assets/doctor.svg'
 
 const Dashboard: React.FC = () => {
   return (
@@ -24,11 +33,28 @@ const Dashboard: React.FC = () => {
         <ContainerMain>
           <GridLayout>
             <Nav></Nav>
+
             <ContainerSearch></ContainerSearch>
 
             <ContainerProfile></ContainerProfile>
 
-            <ContainerPrincipal></ContainerPrincipal>
+            <ContainerPrincipal>
+              <ContainerPrincipalFlex>
+                <ContainerPrincipalLeft>
+                  <TextDate>Segunda-feira, 23 de Setembro de 2020</TextDate>
+                  <Title>
+                    Bem vindo <SpanBold>Dr. Chadson!</SpanBold>
+                  </Title>
+                  <Subtitle>
+                    Você possui <SpanOrange>12 clientes </SpanOrange>
+                    restantes hoje!
+                  </Subtitle>
+                </ContainerPrincipalLeft>
+                <ContainerPrincipalRight>
+                  <DoctorSVG />
+                </ContainerPrincipalRight>
+              </ContainerPrincipalFlex>
+            </ContainerPrincipal>
 
             <ContainerEarning></ContainerEarning>
 
