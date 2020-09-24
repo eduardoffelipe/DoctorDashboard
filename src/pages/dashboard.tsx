@@ -19,15 +19,23 @@ import {
   Subtitle,
   ContainerPrincipalFlex,
   ContainerPrincipalLeft,
-  ContainerPrincipalRight
+  ContainerPrincipalRight,
+  ValueEarning,
+  ContainerValue,
+  SubtitleEarnig,
+  ContainerClientsTypes,
+  NumberTypeNewClients,
+  NumberTypeClients,
+  ContainerClientsInfo,
+  TextClientsInfo
 } from '../styles/pages/Dashboard'
-import DoctorSVG from '../assets/doctor.svg'
+import DoctorPng from '../assets/doctor2.png'
 
 const Dashboard: React.FC = () => {
   return (
     <div>
       <Head>
-        <title>Doctor Dashboard</title>
+        <title>Doctor The Dashboard</title>
       </Head>
       <main>
         <ContainerMain>
@@ -51,14 +59,28 @@ const Dashboard: React.FC = () => {
                   </Subtitle>
                 </ContainerPrincipalLeft>
                 <ContainerPrincipalRight>
-                  <DoctorSVG />
+                  <img src={DoctorPng} alt="" width="500px" />
                 </ContainerPrincipalRight>
               </ContainerPrincipalFlex>
             </ContainerPrincipal>
 
-            <ContainerEarning></ContainerEarning>
+            <ContainerEarning>
+              <ValueEarning>R$5380,00</ValueEarning>
+              <SubtitleEarnig>Valor Total Bruto</SubtitleEarnig>
+            </ContainerEarning>
 
-            <ContainerClients></ContainerClients>
+            <ContainerClients>
+              <ContainerClientsTypes>
+                <ContainerClientsInfo>
+                  <NumberTypeNewClients>50</NumberTypeNewClients>
+                  <TextClientsInfo>Novos Pacientes</TextClientsInfo>
+                </ContainerClientsInfo>
+                <ContainerClientsInfo>
+                  <NumberTypeClients>92</NumberTypeClients>
+                  <TextClientsInfo>Pacientes Recorrentes</TextClientsInfo>
+                </ContainerClientsInfo>
+              </ContainerClientsTypes>
+            </ContainerClients>
 
             <ContainerGender></ContainerGender>
 
