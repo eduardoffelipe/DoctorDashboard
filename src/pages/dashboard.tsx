@@ -21,13 +21,14 @@ import {
   ContainerPrincipalLeft,
   ContainerPrincipalRight,
   ValueEarning,
-  ContainerValue,
   SubtitleEarnig,
   ContainerClientsTypes,
   NumberTypeNewClients,
   NumberTypeClients,
   ContainerClientsInfo,
-  TextClientsInfo
+  TextClientsInfo,
+  TitleGender,
+  ContainerHeaderGender
 } from '../styles/pages/Dashboard'
 import DoctorPng from '../assets/doctor2.png'
 
@@ -82,7 +83,12 @@ const Dashboard: React.FC = () => {
               </ContainerClientsTypes>
             </ContainerClients>
 
-            <ContainerGender></ContainerGender>
+            <ContainerGender>
+              <ContainerHeaderGender>
+                <TitleGender>Gênero</TitleGender>
+                <TitleGender>Gênero</TitleGender>
+              </ContainerHeaderGender>
+            </ContainerGender>
 
             <ContainerAppoitments></ContainerAppoitments>
 

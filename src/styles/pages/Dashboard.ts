@@ -166,6 +166,11 @@ export const ContainerGender = styled.div`
   border-radius: 20px;
   padding: 20px;
 `
+export const ContainerHeaderGender = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+`
 export const TitleGender = styled.h2`
   font-size: 3.2rem;
   color: ${props => props.theme.colors.text};
